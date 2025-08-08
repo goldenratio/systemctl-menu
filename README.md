@@ -1,6 +1,6 @@
 # systemctl-menu
 
-> A minimal fast systemctl menu written in raylib-rs for i3wm or sway
+> A minimal fast systemctl menu written in raylib-rs, meant for i3wm
 
 
 ## Example i3wm Config Usage
