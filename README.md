@@ -2,6 +2,8 @@
 
 > A minimal fast systemctl menu written in raylib-rs, meant for i3wm
 
+> [!NOTE]  
+> Feature Complete
 
 ## Example i3wm Config Usage
 
@@ -23,3 +25,7 @@ cp ./target/release/systemctl-menu ~/.local/bin
 
 ## Screenshot
 <img width="2560" height="1440" alt="image" src="https://github.com/user-attachments/assets/6a49cf65-0e97-4be8-b6a8-9e0793565252" />
+
+## Building for Wayland
+- https://github.com/raysan5/raylib/wiki/Working-on-GNU-Linux
+- https://github.com/deltaphc/raylib-rs?tab=readme-ov-file#if-building-for-wayland-on-linux
