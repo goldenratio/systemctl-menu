@@ -39,6 +39,11 @@ impl MenuControlsView {
     }
   }
 
+  pub fn set_window_size(&mut self, width: i32, height: i32) {
+    self.window_size.0 = width;
+    self.window_size.1 = height;
+  }
+
   pub fn move_down(&mut self) {
     self.current_index += 1;
     if self.current_index >= self.items.len() as i8 {

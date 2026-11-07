@@ -47,6 +47,10 @@ fn main() {
   let mut menu_view = MenuControlsView::new(&labels, window_size);
 
   while !rl.window_should_close() {
+    if rl.is_window_resized() {
+      menu_view.set_window_size(rl.get_screen_width(), rl.get_screen_height());
+    }
+
     // update logic
     if rl.is_key_pressed(KeyboardKey::KEY_DOWN) {
       menu_view.move_down();
