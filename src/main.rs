@@ -17,10 +17,9 @@ fn main() {
   let (mut rl, thread) = raylib::init()
     .size(window_size.0, window_size.1)
     .undecorated()
+    .topmost()
+    .vsync()
     .build();
-
-  // ConfigFlags::FLAG_WINDOW_TOPMOST
-  rl.set_window_state(rl.get_window_state().set_window_topmost(true));
 
   rl.set_target_fps(60);
 
